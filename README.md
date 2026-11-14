@@ -1,6 +1,6 @@
 # Retrieval metrics benchmark
 
-Code and results behind the blog post "Retrieval Evaluation Metrics: When Each One Misleads" (link added once the post is live). It scores BM25, bge-base-en-v1.5 and a reciprocal rank fusion hybrid on BEIR SciFact and NFCorpus with recall, precision, hit rate, MRR, MAP and nDCG, and shows where the metrics disagree.
+Code and results behind the blog post [Retrieval Evaluation Metrics: When Each One Misleads](https://www.saliltrehan.com/post/retrieval-evaluation-metrics). It scores BM25, bge-base-en-v1.5 and a reciprocal rank fusion hybrid on BEIR SciFact and NFCorpus with recall, precision, hit rate, MRR, MAP and nDCG, and shows where the metrics disagree.
 
 ## Headline result
 
