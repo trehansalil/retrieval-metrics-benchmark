@@ -1,0 +1,1557 @@
+{
+  "dataset": "scifact",
+  "dataset_sha256": "8ad9035811f5acb750278959afe0cdf8919a8ee34403ce74a164fa0e7a572622",
+  "experiment": "e1",
+  "libraries": {
+    "beir": "2.2.0",
+    "bm25s": "0.3.16",
+    "ir_measures": "0.4.3",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "python": "3.12.3",
+    "pytrec_eval-terrier": "0.5.11",
+    "rank-bm25": "0.2.2",
+    "ranx": "0.3.21",
+    "scipy": "1.18.1",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.1"
+  },
+  "machine": {
+    "cpu_count": 4,
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39"
+  },
+  "results": {
+    "crosscheck_max_abs_diff": {
+      "BM25": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 0.0,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 0.0,
+        "ranx:NDCG@10_exp": 0.0,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 1.1102230246251565e-16,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 0.0,
+        "ranx_mean:MRR@10": 1.1102230246251565e-16,
+        "ranx_mean:NDCG@10": 0.0,
+        "ranx_mean:NDCG@10_exp": 0.0,
+        "ranx_mean:P@10": 1.3877787807814457e-17,
+        "ranx_mean:R@10": 0.0,
+        "ranx_mean:R@100": 0.0
+      },
+      "RRF_hybrid": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 2.220446049250313e-16,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 2.220446049250313e-16,
+        "ranx:NDCG@10_exp": 2.220446049250313e-16,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 1.1102230246251565e-16,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 1.1102230246251565e-16,
+        "ranx_mean:MRR@10": 1.1102230246251565e-16,
+        "ranx_mean:NDCG@10": 1.1102230246251565e-16,
+        "ranx_mean:NDCG@10_exp": 1.1102230246251565e-16,
+        "ranx_mean:P@10": 2.7755575615628914e-17,
+        "ranx_mean:R@10": 0.0,
+        "ranx_mean:R@100": 0.0
+      },
+      "dense_bge_base": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 1.1102230246251565e-16,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 1.1102230246251565e-16,
+        "ranx:NDCG@10_exp": 1.1102230246251565e-16,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 0.0,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 0.0,
+        "ranx_mean:MRR@10": 0.0,
+        "ranx_mean:NDCG@10": 0.0,
+        "ranx_mean:NDCG@10_exp": 0.0,
+        "ranx_mean:P@10": 1.3877787807814457e-17,
+        "ranx_mean:R@10": 0.0,
+        "ranx_mean:R@100": 0.0
+      }
+    },
+    "crosscheck_overall_max": 2.220446049250313e-16,
+    "dense_model": "bge-base",
+    "depth": 100,
+    "examples": [
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 0.16666666666666666
+        },
+        "P@10": {
+          "BM25": 0.1,
+          "dense_bge_base": 0.2
+        },
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "metrics": [
+          "P@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.25,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "P@10": {
+          "BM25": 0.1,
+          "dense_bge_base": 0.2
+        },
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "P@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 0.16666666666666666
+        },
+        "R@10": {
+          "BM25": 0.5,
+          "dense_bge_base": 1.0
+        },
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.25,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "R@10": {
+          "BM25": 0.5,
+          "dense_bge_base": 1.0
+        },
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "R@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MAP@10": {
+          "BM25": 0.16666666666666666,
+          "dense_bge_base": 0.20833333333333331
+        },
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 0.16666666666666666
+        },
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "metrics": [
+          "MRR@10",
+          "MAP@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MAP@10": {
+          "BM25": 0.125,
+          "dense_bge_base": 0.17142857142857143
+        },
+        "MRR@10": {
+          "BM25": 0.25,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "MRR@10",
+          "MAP@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 0.16666666666666666
+        },
+        "NDCG@10": {
+          "BM25": 0.3065735963827292,
+          "dense_bge_base": 0.41183384043543503
+        },
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "metrics": [
+          "MRR@10",
+          "NDCG@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.25,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "NDCG@10": {
+          "BM25": 0.2640681225725909,
+          "dense_bge_base": 0.38162168437253385
+        },
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "MRR@10",
+          "NDCG@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "RRF_hybrid": 0.25
+        },
+        "P@10": {
+          "BM25": 0.1,
+          "RRF_hybrid": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "P@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "RRF_hybrid": 0.25
+        },
+        "R@10": {
+          "BM25": 0.5,
+          "RRF_hybrid": 1.0
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MAP@10": {
+          "BM25": 0.16666666666666666,
+          "RRF_hybrid": 0.26785714285714285
+        },
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "RRF_hybrid": 0.25
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "MRR@10",
+          "MAP@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MRR@10": {
+          "BM25": 0.3333333333333333,
+          "RRF_hybrid": 0.25
+        },
+        "NDCG@10": {
+          "BM25": 0.3065735963827292,
+          "RRF_hybrid": 0.46845052016107697
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "MRR@10",
+          "NDCG@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "261",
+        "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO."
+      },
+      {
+        "MRR@10": {
+          "RRF_hybrid": 0.2,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "P@10": {
+          "RRF_hybrid": 0.1,
+          "dense_bge_base": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 5,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "P@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "MRR@10": {
+          "RRF_hybrid": 0.2,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "R@10": {
+          "RRF_hybrid": 0.5,
+          "dense_bge_base": 1.0
+        },
+        "RRF_hybrid_first_rel_rank": 5,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "R@10",
+          "MRR@10"
+        ],
+        "n_relevant": 2,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      },
+      {
+        "NDCG@10": {
+          "RRF_hybrid": 0.72878684203556,
+          "dense_bge_base": 0.7234267649959281
+        },
+        "R@100": {
+          "RRF_hybrid": 0.8,
+          "dense_bge_base": 1.0
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 5,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "133",
+        "query": "Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyros"
+      },
+      {
+        "MAP@10": {
+          "RRF_hybrid": 0.1,
+          "dense_bge_base": 0.17142857142857143
+        },
+        "MRR@10": {
+          "RRF_hybrid": 0.2,
+          "dense_bge_base": 0.14285714285714285
+        },
+        "RRF_hybrid_first_rel_rank": 5,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 7,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "MRR@10",
+          "MAP@10"
+        ],
+        "n_relevant": 2,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "1041",
+        "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes."
+      }
+    ],
+    "grade_values": [
+      1
+    ],
+    "n_docs": 5183,
+    "n_queries": 300,
+    "ndcg_variant_gap": {
+      "BM25": {
+        "max_abs_gap": 0.0,
+        "mean_linear_minus_exp": 0.0,
+        "n_queries_gap_gt_0.01": 0
+      },
+      "RRF_hybrid": {
+        "max_abs_gap": 0.0,
+        "mean_linear_minus_exp": 0.0,
+        "n_queries_gap_gt_0.01": 0
+      },
+      "dense_bge_base": {
+        "max_abs_gap": 0.0,
+        "mean_linear_minus_exp": 0.0,
+        "n_queries_gap_gt_0.01": 0
+      }
+    },
+    "paired_bootstrap": {
+      "BM25 - RRF_hybrid": {
+        "MAP@100": {
+          "ci95": [
+            -0.07699958266091174,
+            -0.031513659768794805
+          ],
+          "mean_diff": -0.05444620887702699
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.07825181878306878,
+            -0.030521626984126995
+          ],
+          "mean_diff": -0.054675925925925926
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.07680981423448612,
+            -0.03483375936643519
+          ],
+          "mean_diff": -0.056064340102774085
+        },
+        "P@10": {
+          "ci95": [
+            -0.012,
+            -0.004333333333333333
+          ],
+          "mean_diff": -0.008000000000000002
+        },
+        "R@100": {
+          "ci95": [
+            -0.06833333333333333,
+            -0.023333333333333334
+          ],
+          "mean_diff": -0.04466666666666667
+        }
+      },
+      "BM25 - dense_bge_base": {
+        "MAP@100": {
+          "ci95": [
+            -0.0900481173237463,
+            -0.018756097870302888
+          ],
+          "mean_diff": -0.0544858308369808
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.09163839285714284,
+            -0.018361970899470902
+          ],
+          "mean_diff": -0.05505952380952381
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.0887262274498634,
+            -0.024245841595943233
+          ],
+          "mean_diff": -0.056558226514052096
+        },
+        "P@10": {
+          "ci95": [
+            -0.014666666666666668,
+            -0.004333333333333333
+          ],
+          "mean_diff": -0.009333333333333332
+        },
+        "R@100": {
+          "ci95": [
+            -0.06866666666666667,
+            -0.01
+          ],
+          "mean_diff": -0.03866666666666667
+        }
+      },
+      "dense_bge_base - RRF_hybrid": {
+        "MAP@100": {
+          "ci95": [
+            -0.02309488054484928,
+            0.023164441399436804
+          ],
+          "mean_diff": 3.962195995380391e-05
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.023791203703703707,
+            0.024965906084656084
+          ],
+          "mean_diff": 0.0003835978835978837
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.020526356616374704,
+            0.021259334558681273
+          ],
+          "mean_diff": 0.0004938864112780135
+        },
+        "P@10": {
+          "ci95": [
+            -0.0020000000000000005,
+            0.004666666666666668
+          ],
+          "mean_diff": 0.0013333333333333337
+        },
+        "R@100": {
+          "ci95": [
+            -0.026,
+            0.012
+          ],
+          "mean_diff": -0.006
+        }
+      }
+    },
+    "query_level_disagreement": {
+      "BM25 vs RRF_hybrid": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 24
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 24
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 24
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 104
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.010309278350515464,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 97
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.010309278350515464,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 97
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 24
+        },
+        "P@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 30
+        },
+        "P@10|MRR@10": {
+          "frac": 0.038461538461538464,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 26
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 30
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 30
+        },
+        "P@10|R@100": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 2
+        },
+        "R@100|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 2
+        },
+        "R@100|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 3
+        },
+        "R@100|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 3
+        },
+        "R@100|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 3
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 24
+        },
+        "R@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 30
+        },
+        "R@10|MRR@10": {
+          "frac": 0.038461538461538464,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 26
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 30
+        },
+        "R@10|R@100": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 2
+        }
+      },
+      "BM25 vs dense_bge_base": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 37
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 37
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 37
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 131
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.016129032258064516,
+          "opposite_winner": 2,
+          "queries_both_nonzero": 124
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.016129032258064516,
+          "opposite_winner": 2,
+          "queries_both_nonzero": 124
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 37
+        },
+        "P@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 45
+        },
+        "P@10|MRR@10": {
+          "frac": 0.047619047619047616,
+          "opposite_winner": 2,
+          "queries_both_nonzero": 42
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 45
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 45
+        },
+        "P@10|R@100": {
+          "frac": 0.06666666666666667,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 15
+        },
+        "R@100|Hit@10": {
+          "frac": 0.07142857142857142,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 14
+        },
+        "R@100|MAP@10": {
+          "frac": 0.06666666666666667,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 15
+        },
+        "R@100|MRR@10": {
+          "frac": 0.07142857142857142,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 14
+        },
+        "R@100|NDCG@10": {
+          "frac": 0.06666666666666667,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 15
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 37
+        },
+        "R@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 45
+        },
+        "R@10|MRR@10": {
+          "frac": 0.047619047619047616,
+          "opposite_winner": 2,
+          "queries_both_nonzero": 42
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 45
+        },
+        "R@10|R@100": {
+          "frac": 0.06666666666666667,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 15
+        }
+      },
+      "dense_bge_base vs RRF_hybrid": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.009708737864077669,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 103
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.010869565217391304,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 92
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.010869565217391304,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 92
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "P@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "P@10|MRR@10": {
+          "frac": 0.047619047619047616,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 21
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "P@10|R@100": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 0
+        },
+        "R@100|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 0
+        },
+        "R@100|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 1
+        },
+        "R@100|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 0
+        },
+        "R@100|NDCG@10": {
+          "frac": 1.0,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 1
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "R@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "R@10|MRR@10": {
+          "frac": 0.047619047619047616,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 21
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "R@10|R@100": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 0
+        }
+      }
+    },
+    "same_P_R_different_rank": {
+      "MAP@10": [
+        1.0,
+        0.1
+      ],
+      "MRR@10": [
+        1.0,
+        0.1
+      ],
+      "NDCG@10": [
+        1.0,
+        0.2890648263178879
+      ],
+      "P@10": 0.1,
+      "R@10": [
+        1.0,
+        1.0
+      ],
+      "labels_q1": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels_q2": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n_relevant": 1,
+      "q1": "100",
+      "q2": "1279",
+      "system": "BM25"
+    },
+    "sources": {
+      "BM25": "e2_bm25_scifact_selected.json meta={'k1': 1.2, 'b': 0.8, 'analyzer': {'stem': 'porter', 'stop': None, 'pattern': 'w1', 'possessive': False}}",
+      "RRF": "k=60 over the two runs, depth 100",
+      "dense": "e3_bge-base_scifact.json"
+    },
+    "system_level_winners": {
+      "BM25 vs RRF_hybrid": {
+        "Hit@10": {
+          "A": 0.8333333333333334,
+          "B": 0.8866666666666667,
+          "winner": "RRF_hybrid"
+        },
+        "MAP@10": {
+          "A": 0.6368359788359788,
+          "B": 0.6918853835978837,
+          "winner": "RRF_hybrid"
+        },
+        "MAP@100": {
+          "A": 0.6433406332814805,
+          "B": 0.6977868421585075,
+          "winner": "RRF_hybrid"
+        },
+        "MRR": {
+          "A": 0.6529191027257621,
+          "B": 0.7070059215134429,
+          "winner": "RRF_hybrid"
+        },
+        "MRR@10": {
+          "A": 0.6483267195767195,
+          "B": 0.7030026455026456,
+          "winner": "RRF_hybrid"
+        },
+        "NDCG@10": {
+          "A": 0.6838330614046269,
+          "B": 0.7398974015074009,
+          "winner": "RRF_hybrid"
+        },
+        "NDCG@10_exp": {
+          "A": 0.6838330614046269,
+          "B": 0.7398974015074009,
+          "winner": "RRF_hybrid"
+        },
+        "P@10": {
+          "A": 0.08933333333333332,
+          "B": 0.09733333333333331,
+          "winner": "RRF_hybrid"
+        },
+        "R@10": {
+          "A": 0.8138333333333333,
+          "B": 0.8728888888888889,
+          "winner": "RRF_hybrid"
+        },
+        "R@100": {
+          "A": 0.9279999999999999,
+          "B": 0.9726666666666667,
+          "winner": "RRF_hybrid"
+        }
+      },
+      "BM25 vs dense_bge_base": {
+        "Hit@10": {
+          "A": 0.8333333333333334,
+          "B": 0.8833333333333333,
+          "winner": "dense_bge_base"
+        },
+        "MAP@10": {
+          "A": 0.6368359788359788,
+          "B": 0.6929613756613757,
+          "winner": "dense_bge_base"
+        },
+        "MAP@100": {
+          "A": 0.6433406332814805,
+          "B": 0.6978264641184614,
+          "winner": "dense_bge_base"
+        },
+        "MRR": {
+          "A": 0.6529191027257621,
+          "B": 0.7070943031404664,
+          "winner": "dense_bge_base"
+        },
+        "MRR@10": {
+          "A": 0.6483267195767195,
+          "B": 0.7033862433862433,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10": {
+          "A": 0.6838330614046269,
+          "B": 0.740391287918679,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10_exp": {
+          "A": 0.6838330614046269,
+          "B": 0.740391287918679,
+          "winner": "dense_bge_base"
+        },
+        "P@10": {
+          "A": 0.08933333333333332,
+          "B": 0.09866666666666665,
+          "winner": "dense_bge_base"
+        },
+        "R@10": {
+          "A": 0.8138333333333333,
+          "B": 0.8742222222222221,
+          "winner": "dense_bge_base"
+        },
+        "R@100": {
+          "A": 0.9279999999999999,
+          "B": 0.9666666666666667,
+          "winner": "dense_bge_base"
+        }
+      },
+      "dense_bge_base vs RRF_hybrid": {
+        "Hit@10": {
+          "A": 0.8833333333333333,
+          "B": 0.8866666666666667,
+          "winner": "RRF_hybrid"
+        },
+        "MAP@10": {
+          "A": 0.6929613756613757,
+          "B": 0.6918853835978837,
+          "winner": "dense_bge_base"
+        },
+        "MAP@100": {
+          "A": 0.6978264641184614,
+          "B": 0.6977868421585075,
+          "winner": "dense_bge_base"
+        },
+        "MRR": {
+          "A": 0.7070943031404664,
+          "B": 0.7070059215134429,
+          "winner": "dense_bge_base"
+        },
+        "MRR@10": {
+          "A": 0.7033862433862433,
+          "B": 0.7030026455026456,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10": {
+          "A": 0.740391287918679,
+          "B": 0.7398974015074009,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10_exp": {
+          "A": 0.740391287918679,
+          "B": 0.7398974015074009,
+          "winner": "dense_bge_base"
+        },
+        "P@10": {
+          "A": 0.09866666666666665,
+          "B": 0.09733333333333331,
+          "winner": "dense_bge_base"
+        },
+        "R@10": {
+          "A": 0.8742222222222221,
+          "B": 0.8728888888888889,
+          "winner": "dense_bge_base"
+        },
+        "R@100": {
+          "A": 0.9666666666666667,
+          "B": 0.9726666666666667,
+          "winner": "RRF_hybrid"
+        }
+      }
+    },
+    "system_means": {
+      "BM25": {
+        "Hit@10": 0.8333333333333334,
+        "MAP@10": 0.6368359788359788,
+        "MAP@100": 0.6433406332814805,
+        "MRR": 0.6529191027257621,
+        "MRR@10": 0.6483267195767195,
+        "NDCG@10": 0.6838330614046269,
+        "NDCG@10_exp": 0.6838330614046269,
+        "P@10": 0.08933333333333332,
+        "R@10": 0.8138333333333333,
+        "R@100": 0.9279999999999999
+      },
+      "RRF_hybrid": {
+        "Hit@10": 0.8866666666666667,
+        "MAP@10": 0.6918853835978837,
+        "MAP@100": 0.6977868421585075,
+        "MRR": 0.7070059215134429,
+        "MRR@10": 0.7030026455026456,
+        "NDCG@10": 0.7398974015074009,
+        "NDCG@10_exp": 0.7398974015074009,
+        "P@10": 0.09733333333333331,
+        "R@10": 0.8728888888888889,
+        "R@100": 0.9726666666666667
+      },
+      "dense_bge_base": {
+        "Hit@10": 0.8833333333333333,
+        "MAP@10": 0.6929613756613757,
+        "MAP@100": 0.6978264641184614,
+        "MRR": 0.7070943031404664,
+        "MRR@10": 0.7033862433862433,
+        "NDCG@10": 0.740391287918679,
+        "NDCG@10_exp": 0.740391287918679,
+        "P@10": 0.09866666666666665,
+        "R@10": 0.8742222222222221,
+        "R@100": 0.9666666666666667
+      }
+    },
+    "toy_and_wikipedia": {
+      "AP": 0.3333333333333333,
+      "AP_wrong_divisor_hits": 0.5,
+      "F1@5": 0.5,
+      "P@5": 0.4,
+      "R@5": 0.6666666666666666,
+      "dcg5_exp": 10.48402424049139,
+      "dcg5_linear": 5.466241679685392,
+      "err5_gmax3": 0.906005859375,
+      "idcg5_exp": 14.595390756454924,
+      "idcg5_linear": 7.1409951840957,
+      "ndcg5_exp": 0.7183106239108227,
+      "ndcg5_linear": 0.7654733743357942,
+      "pytrec_ndcg5_linear": 0.7654733743357942,
+      "ranx_ndcg5_exp": 0.7183106239108228,
+      "ranx_ndcg5_linear": 0.7654733743357942,
+      "wiki_dcg6": 6.861126688593501,
+      "wiki_idcg6_full": 8.740262365546286,
+      "wiki_ndcg6_full_ranx": 0.785002371969948,
+      "wiki_ndcg6_ideal_from_6_ranked_docs_only": 0.9608081943360616,
+      "wiki_ndcg6_ideal_from_full_judged_set": 0.7850023719699477
+    }
+  },
+  "seed": 42,
+  "timestamp": "20261103T065340"
+}

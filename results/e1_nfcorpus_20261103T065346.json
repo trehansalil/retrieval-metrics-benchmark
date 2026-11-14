@@ -1,0 +1,2193 @@
+{
+  "dataset": "nfcorpus",
+  "dataset_sha256": "c10ce6eb805a52747bb3f7792f3fd7085a121c81e91a8021d5bcdbdf697977e2",
+  "experiment": "e1",
+  "libraries": {
+    "beir": "2.2.0",
+    "bm25s": "0.3.16",
+    "ir_measures": "0.4.3",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "python": "3.12.3",
+    "pytrec_eval-terrier": "0.5.11",
+    "rank-bm25": "0.2.2",
+    "ranx": "0.3.21",
+    "scipy": "1.18.1",
+    "sentence-transformers": "6.2.0",
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.1"
+  },
+  "machine": {
+    "cpu_count": 4,
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39"
+  },
+  "results": {
+    "crosscheck_max_abs_diff": {
+      "BM25": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 2.220446049250313e-16,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 2.220446049250313e-16,
+        "ranx:NDCG@10_exp": 3.3306690738754696e-16,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 1.3877787807814457e-17,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 0.0,
+        "ranx_mean:MRR@10": 0.0,
+        "ranx_mean:NDCG@10": 0.0,
+        "ranx_mean:NDCG@10_exp": 0.0,
+        "ranx_mean:P@10": 0.0,
+        "ranx_mean:R@10": 2.7755575615628914e-17,
+        "ranx_mean:R@100": 0.0
+      },
+      "RRF_hybrid": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 3.3306690738754696e-16,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 3.3306690738754696e-16,
+        "ranx:NDCG@10_exp": 3.3306690738754696e-16,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 0.0,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 0.0,
+        "ranx_mean:MRR@10": 1.1102230246251565e-16,
+        "ranx_mean:NDCG@10": 0.0,
+        "ranx_mean:NDCG@10_exp": 0.0,
+        "ranx_mean:P@10": 0.0,
+        "ranx_mean:R@10": 2.7755575615628914e-17,
+        "ranx_mean:R@100": 5.551115123125783e-17
+      },
+      "dense_bge_base": {
+        "pytrec_eval:Hit@10": 0.0,
+        "pytrec_eval:MAP@10": 0.0,
+        "pytrec_eval:MAP@100": 0.0,
+        "pytrec_eval:MRR": 0.0,
+        "pytrec_eval:NDCG@10": 2.220446049250313e-16,
+        "pytrec_eval:P@10": 0.0,
+        "pytrec_eval:R@10": 0.0,
+        "pytrec_eval:R@100": 0.0,
+        "ranx:Hit@10": 0.0,
+        "ranx:MAP@10": 0.0,
+        "ranx:MAP@100": 0.0,
+        "ranx:MRR": 0.0,
+        "ranx:MRR@10": 0.0,
+        "ranx:NDCG@10": 2.220446049250313e-16,
+        "ranx:NDCG@10_exp": 5.551115123125783e-16,
+        "ranx:P@10": 0.0,
+        "ranx:R@10": 0.0,
+        "ranx:R@100": 0.0,
+        "ranx_mean:Hit@10": 0.0,
+        "ranx_mean:MAP@10": 2.7755575615628914e-17,
+        "ranx_mean:MAP@100": 0.0,
+        "ranx_mean:MRR": 1.1102230246251565e-16,
+        "ranx_mean:MRR@10": 1.1102230246251565e-16,
+        "ranx_mean:NDCG@10": 0.0,
+        "ranx_mean:NDCG@10_exp": 0.0,
+        "ranx_mean:P@10": 0.0,
+        "ranx_mean:R@10": 0.0,
+        "ranx_mean:R@100": 0.0
+      }
+    },
+    "crosscheck_overall_max": 5.551115123125783e-16,
+    "dense_model": "bge-base",
+    "depth": 100,
+    "examples": [
+      {
+        "BM25_first_rel_rank": 5,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10_exp": {
+          "BM25": 0.2855938966541961,
+          "dense_bge_base": 0.49544996311329725
+        },
+        "R@100": {
+          "BM25": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 10,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10_exp": {
+          "BM25": 0.46927872602275644,
+          "dense_bge_base": 0.4632423659320675
+        },
+        "R@100": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 1.0
+        },
+        "dense_bge_base_first_rel_rank": 2,
+        "dense_bge_base_labels_top10": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 3,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-2019",
+        "query": "rickets"
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10": {
+          "BM25": 0.16369747519436975,
+          "dense_bge_base": 0.38009376671593426
+        },
+        "R@100": {
+          "BM25": 1.0,
+          "dense_bge_base": 0.5
+        },
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-371",
+        "query": "Any update on the scary in vitro avocado data?"
+      },
+      {
+        "BM25_first_rel_rank": 5,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10": {
+          "BM25": 0.2406871186625798,
+          "dense_bge_base": 0.41754542187436805
+        },
+        "R@100": {
+          "BM25": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 10,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "BM25_first_rel_rank": 4,
+        "BM25_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MAP@10": {
+          "BM25": 0.125,
+          "dense_bge_base": 0.5
+        },
+        "R@100": {
+          "BM25": 1.0,
+          "dense_bge_base": 0.5
+        },
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 2,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-371",
+        "query": "Any update on the scary in vitro avocado data?"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "MAP@10": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 0.27777777777777773
+        },
+        "R@100": {
+          "BM25": 0.3333333333333333,
+          "dense_bge_base": 1.0
+        },
+        "dense_bge_base_first_rel_rank": 2,
+        "dense_bge_base_labels_top10": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 3,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-2019",
+        "query": "rickets"
+      },
+      {
+        "BM25_first_rel_rank": 3,
+        "BM25_labels_top10": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "P@10": {
+          "BM25": 0.6,
+          "dense_bge_base": 0.4
+        },
+        "R@100": {
+          "BM25": 0.13333333333333333,
+          "dense_bge_base": 0.3333333333333333
+        },
+        "dense_bge_base_first_rel_rank": 2,
+        "dense_bge_base_labels_top10": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "metrics": [
+          "P@10",
+          "R@100"
+        ],
+        "n_relevant": 60,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-1018",
+        "query": "DHA"
+      },
+      {
+        "BM25_first_rel_rank": 2,
+        "BM25_labels_top10": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P@10": {
+          "BM25": 0.2,
+          "dense_bge_base": 0.1
+        },
+        "R@100": {
+          "BM25": 0.25806451612903225,
+          "dense_bge_base": 0.5483870967741935
+        },
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "P@10",
+          "R@100"
+        ],
+        "n_relevant": 31,
+        "pair": "BM25 vs dense_bge_base",
+        "qid": "PLAIN-2460",
+        "query": "Diabetes as a Disease of Fat Toxicity"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "NDCG@10_exp": {
+          "BM25": 0.6274092458891772,
+          "RRF_hybrid": 0.5541432109622958
+        },
+        "R@100": {
+          "BM25": 0.18181818181818182,
+          "RRF_hybrid": 0.48484848484848486
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 33,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-1857",
+        "query": "phytic acid"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10_exp": {
+          "BM25": 0.31488013066763093,
+          "RRF_hybrid": 0.09478836436955078
+        },
+        "R@100": {
+          "BM25": 0.06451612903225806,
+          "RRF_hybrid": 0.1935483870967742
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 31,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-946",
+        "query": "coma"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "NDCG@10": {
+          "BM25": 0.6274092458891772,
+          "RRF_hybrid": 0.5541432109622958
+        },
+        "R@100": {
+          "BM25": 0.18181818181818182,
+          "RRF_hybrid": 0.48484848484848486
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 33,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-1857",
+        "query": "phytic acid"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NDCG@10": {
+          "BM25": 0.31488013066763093,
+          "RRF_hybrid": 0.09478836436955078
+        },
+        "R@100": {
+          "BM25": 0.06451612903225806,
+          "RRF_hybrid": 0.1935483870967742
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 31,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-946",
+        "query": "coma"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "MAP@10": {
+          "BM25": 0.13636363636363635,
+          "RRF_hybrid": 0.11515151515151514
+        },
+        "R@100": {
+          "BM25": 0.18181818181818182,
+          "RRF_hybrid": 0.48484848484848486
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 33,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-1857",
+        "query": "phytic acid"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "MAP@10": {
+          "BM25": 0.07751322751322752,
+          "RRF_hybrid": 0.06604938271604939
+        },
+        "R@100": {
+          "BM25": 0.2,
+          "RRF_hybrid": 0.4444444444444444
+        },
+        "RRF_hybrid_first_rel_rank": 2,
+        "RRF_hybrid_labels_top10": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 45,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-2071",
+        "query": "serotonin"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "P@10": {
+          "BM25": 0.5,
+          "RRF_hybrid": 0.4
+        },
+        "R@100": {
+          "BM25": 0.18181818181818182,
+          "RRF_hybrid": 0.48484848484848486
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "P@10",
+          "R@100"
+        ],
+        "n_relevant": 33,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-1857",
+        "query": "phytic acid"
+      },
+      {
+        "BM25_first_rel_rank": 1,
+        "BM25_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "P@10": {
+          "BM25": 0.6,
+          "RRF_hybrid": 0.9
+        },
+        "R@100": {
+          "BM25": 0.6296296296296297,
+          "RRF_hybrid": 0.5925925925925926
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "metrics": [
+          "P@10",
+          "R@100"
+        ],
+        "n_relevant": 27,
+        "pair": "BM25 vs RRF_hybrid",
+        "qid": "PLAIN-1919",
+        "query": "poultry workers"
+      },
+      {
+        "MAP@10": {
+          "RRF_hybrid": 0.075,
+          "dense_bge_base": 0.12
+        },
+        "R@100": {
+          "RRF_hybrid": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 2,
+        "RRF_hybrid_labels_top10": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 10,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "MAP@10": {
+          "RRF_hybrid": 0.1111111111111111,
+          "dense_bge_base": 0.2888888888888889
+        },
+        "R@100": {
+          "RRF_hybrid": 0.5555555555555556,
+          "dense_bge_base": 0.4444444444444444
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "MAP@10"
+        ],
+        "n_relevant": 9,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-2970",
+        "query": "Preventing Cataracts with Diet"
+      },
+      {
+        "NDCG@10": {
+          "RRF_hybrid": 0.3065499400219298,
+          "dense_bge_base": 0.41754542187436805
+        },
+        "R@100": {
+          "RRF_hybrid": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 2,
+        "RRF_hybrid_labels_top10": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 10,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "NDCG@10": {
+          "RRF_hybrid": 0.27634909527331597,
+          "dense_bge_base": 0.09508977831648074
+        },
+        "R@100": {
+          "RRF_hybrid": 0.41935483870967744,
+          "dense_bge_base": 0.5483870967741935
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10"
+        ],
+        "n_relevant": 31,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-2460",
+        "query": "Diabetes as a Disease of Fat Toxicity"
+      },
+      {
+        "NDCG@10_exp": {
+          "RRF_hybrid": 0.3637452323018085,
+          "dense_bge_base": 0.49544996311329725
+        },
+        "R@100": {
+          "RRF_hybrid": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 2,
+        "RRF_hybrid_labels_top10": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 10,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "NDCG@10_exp": {
+          "RRF_hybrid": 0.29745945632942394,
+          "dense_bge_base": 0.10235370494891942
+        },
+        "R@100": {
+          "RRF_hybrid": 0.41935483870967744,
+          "dense_bge_base": 0.5483870967741935
+        },
+        "RRF_hybrid_first_rel_rank": 4,
+        "RRF_hybrid_labels_top10": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        "dense_bge_base_first_rel_rank": 6,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "metrics": [
+          "R@100",
+          "NDCG@10_exp"
+        ],
+        "n_relevant": 31,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-2460",
+        "query": "Diabetes as a Disease of Fat Toxicity"
+      },
+      {
+        "MRR@10": {
+          "RRF_hybrid": 0.5,
+          "dense_bge_base": 1.0
+        },
+        "R@100": {
+          "RRF_hybrid": 0.7,
+          "dense_bge_base": 0.2
+        },
+        "RRF_hybrid_first_rel_rank": 2,
+        "RRF_hybrid_labels_top10": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 1,
+        "dense_bge_base_labels_top10": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        "metrics": [
+          "R@100",
+          "MRR@10"
+        ],
+        "n_relevant": 10,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-468",
+        "query": "Is vitamin D3 (cholecalciferol) preferable to D2 (ergocalciferol)?"
+      },
+      {
+        "MRR@10": {
+          "RRF_hybrid": 1.0,
+          "dense_bge_base": 0.25
+        },
+        "R@100": {
+          "RRF_hybrid": 0.5454545454545454,
+          "dense_bge_base": 0.7272727272727273
+        },
+        "RRF_hybrid_first_rel_rank": 1,
+        "RRF_hybrid_labels_top10": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dense_bge_base_first_rel_rank": 4,
+        "dense_bge_base_labels_top10": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "metrics": [
+          "R@100",
+          "MRR@10"
+        ],
+        "n_relevant": 11,
+        "pair": "dense_bge_base vs RRF_hybrid",
+        "qid": "PLAIN-1363",
+        "query": "Hiroshima"
+      }
+    ],
+    "grade_values": [
+      1,
+      2
+    ],
+    "linear_vs_exp_winner_flips": {
+      "count": 6,
+      "examples": [
+        {
+          "BM25_labels": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "dense_bge_base_labels": [
+            2,
+            2,
+            2,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "exp": [
+            0.7747310870463521,
+            0.7667157930455539
+          ],
+          "linear": [
+            0.7729250715440098,
+            0.7945473429427233
+          ],
+          "pair": "BM25 vs dense_bge_base",
+          "qid": "PLAIN-2",
+          "query": "Do Cholesterol Statin Drugs Cause Breast Cancer?"
+        },
+        {
+          "BM25_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2
+          ],
+          "dense_bge_base_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "exp": [
+            0.13562749716750597,
+            0.11752645522256619
+          ],
+          "linear": [
+            0.1341421255318503,
+            0.14014346421842003
+          ],
+          "pair": "BM25 vs dense_bge_base",
+          "qid": "PLAIN-2590",
+          "query": "Do Vegetarians Get Enough Protein?"
+        },
+        {
+          "BM25_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            0
+          ],
+          "dense_bge_base_labels": [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "exp": [
+            0.25156797643030443,
+            0.27744302190680586
+          ],
+          "linear": [
+            0.2426455465946867,
+            0.2372960757806837
+          ],
+          "pair": "BM25 vs dense_bge_base",
+          "qid": "PLAIN-3201",
+          "query": "Acne & Cancer Connection"
+        },
+        {
+          "BM25_labels": [
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "dense_bge_base_labels": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            0,
+            0
+          ],
+          "exp": [
+            0.3855510272217476,
+            0.39205474692620174
+          ],
+          "linear": [
+            0.4686797588311819,
+            0.4085683036524998
+          ],
+          "pair": "BM25 vs dense_bge_base",
+          "qid": "PLAIN-3292",
+          "query": "Are Multivitamins Good For You?"
+        },
+        {
+          "BM25_labels": [
+            2,
+            2,
+            2,
+            0,
+            2,
+            1,
+            0,
+            2,
+            1,
+            0
+          ],
+          "RRF_hybrid_labels": [
+            2,
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "exp": [
+            0.7747310870463521,
+            0.7595234079409687
+          ],
+          "linear": [
+            0.7729250715440098,
+            0.7841568027568651
+          ],
+          "pair": "BM25 vs RRF_hybrid",
+          "qid": "PLAIN-2",
+          "query": "Do Cholesterol Statin Drugs Cause Breast Cancer?"
+        }
+      ]
+    },
+    "n_docs": 3633,
+    "n_queries": 323,
+    "ndcg_variant_gap": {
+      "BM25": {
+        "max_abs_gap": 0.09902854200177008,
+        "mean_linear_minus_exp": -0.0010280791833957303,
+        "n_queries_gap_gt_0.01": 66
+      },
+      "RRF_hybrid": {
+        "max_abs_gap": 0.11707917323239014,
+        "mean_linear_minus_exp": -0.0008589288641718888,
+        "n_queries_gap_gt_0.01": 80
+      },
+      "dense_bge_base": {
+        "max_abs_gap": 0.13255232839756248,
+        "mean_linear_minus_exp": -0.001152612036339091,
+        "n_queries_gap_gt_0.01": 80
+      }
+    },
+    "paired_bootstrap": {
+      "BM25 - RRF_hybrid": {
+        "MAP@100": {
+          "ci95": [
+            -0.03642355933803342,
+            -0.022539394807722685
+          ],
+          "mean_diff": -0.029135012034152228
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.055237603813455216,
+            -0.007611522679247147
+          ],
+          "mean_diff": -0.03137377758120793
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.046339981872262,
+            -0.02576938003135462
+          ],
+          "mean_diff": -0.035850367147243635
+        },
+        "P@10": {
+          "ci95": [
+            -0.04148606811145511,
+            -0.02260061919504644
+          ],
+          "mean_diff": -0.03188854489164087
+        },
+        "R@100": {
+          "ci95": [
+            -0.10026454208990794,
+            -0.06525694329567223
+          ],
+          "mean_diff": -0.08220640585997971
+        }
+      },
+      "BM25 - dense_bge_base": {
+        "MAP@100": {
+          "ci95": [
+            -0.05012306827896652,
+            -0.025836411914762547
+          ],
+          "mean_diff": -0.03731771035102546
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.06748246228315888,
+            0.004269466558553229
+          ],
+          "mean_diff": -0.031167379232394717
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.06452773043546974,
+            -0.028754126463706238
+          ],
+          "mean_diff": -0.04640355213108935
+        },
+        "P@10": {
+          "ci95": [
+            -0.059442724458204345,
+            -0.029411764705882353
+          ],
+          "mean_diff": -0.04427244582043344
+        },
+        "R@100": {
+          "ci95": [
+            -0.11120650926921374,
+            -0.07030953532376563
+          ],
+          "mean_diff": -0.09032468718695291
+        }
+      },
+      "dense_bge_base - RRF_hybrid": {
+        "MAP@100": {
+          "ci95": [
+            0.0009246782015475273,
+            0.016404448604330477
+          ],
+          "mean_diff": 0.008182698316873223
+        },
+        "MRR@10": {
+          "ci95": [
+            -0.026583738758661362,
+            0.025863801661015276
+          ],
+          "mean_diff": -0.00020639834881320876
+        },
+        "NDCG@10": {
+          "ci95": [
+            -0.001720073675902933,
+            0.023059398304271266
+          ],
+          "mean_diff": 0.010553184983845713
+        },
+        "P@10": {
+          "ci95": [
+            0.0009287925696594456,
+            0.024148606811145508
+          ],
+          "mean_diff": 0.01238390092879257
+        },
+        "R@100": {
+          "ci95": [
+            -0.0012199619758058577,
+            0.01714943393425354
+          ],
+          "mean_diff": 0.008118281326973217
+        }
+      }
+    },
+    "query_level_disagreement": {
+      "BM25 vs RRF_hybrid": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "Hit@10|NDCG@10_exp": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.03910614525139665,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 179
+        },
+        "MAP@10|NDCG@10_exp": {
+          "frac": 0.0446927374301676,
+          "opposite_winner": 8,
+          "queries_both_nonzero": 179
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.0851063829787234,
+          "opposite_winner": 8,
+          "queries_both_nonzero": 94
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.07368421052631578,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 95
+        },
+        "MRR@10|NDCG@10_exp": {
+          "frac": 0.07368421052631578,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 95
+        },
+        "NDCG@10|NDCG@10_exp": {
+          "frac": 0.005434782608695652,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 184
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "P@10|MAP@10": {
+          "frac": 0.05785123966942149,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 121
+        },
+        "P@10|MRR@10": {
+          "frac": 0.22413793103448276,
+          "opposite_winner": 13,
+          "queries_both_nonzero": 58
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.05737704918032787,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 122
+        },
+        "P@10|NDCG@10_exp": {
+          "frac": 0.06557377049180328,
+          "opposite_winner": 8,
+          "queries_both_nonzero": 122
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 122
+        },
+        "P@10|R@100": {
+          "frac": 0.24489795918367346,
+          "opposite_winner": 24,
+          "queries_both_nonzero": 98
+        },
+        "R@100|Hit@10": {
+          "frac": 0.07142857142857142,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 14
+        },
+        "R@100|MAP@10": {
+          "frac": 0.28,
+          "opposite_winner": 35,
+          "queries_both_nonzero": 125
+        },
+        "R@100|MRR@10": {
+          "frac": 0.29310344827586204,
+          "opposite_winner": 17,
+          "queries_both_nonzero": 58
+        },
+        "R@100|NDCG@10": {
+          "frac": 0.31007751937984496,
+          "opposite_winner": 40,
+          "queries_both_nonzero": 129
+        },
+        "R@100|NDCG@10_exp": {
+          "frac": 0.3178294573643411,
+          "opposite_winner": 41,
+          "queries_both_nonzero": 129
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 19
+        },
+        "R@10|MAP@10": {
+          "frac": 0.05785123966942149,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 121
+        },
+        "R@10|MRR@10": {
+          "frac": 0.22413793103448276,
+          "opposite_winner": 13,
+          "queries_both_nonzero": 58
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.05737704918032787,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 122
+        },
+        "R@10|NDCG@10_exp": {
+          "frac": 0.06557377049180328,
+          "opposite_winner": 8,
+          "queries_both_nonzero": 122
+        },
+        "R@10|R@100": {
+          "frac": 0.24489795918367346,
+          "opposite_winner": 24,
+          "queries_both_nonzero": 98
+        }
+      },
+      "BM25 vs dense_bge_base": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "Hit@10|NDCG@10_exp": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.02830188679245283,
+          "opposite_winner": 6,
+          "queries_both_nonzero": 212
+        },
+        "MAP@10|NDCG@10_exp": {
+          "frac": 0.04716981132075472,
+          "opposite_winner": 10,
+          "queries_both_nonzero": 212
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.112,
+          "opposite_winner": 14,
+          "queries_both_nonzero": 125
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.112,
+          "opposite_winner": 14,
+          "queries_both_nonzero": 125
+        },
+        "MRR@10|NDCG@10_exp": {
+          "frac": 0.12,
+          "opposite_winner": 15,
+          "queries_both_nonzero": 125
+        },
+        "NDCG@10|NDCG@10_exp": {
+          "frac": 0.018779342723004695,
+          "opposite_winner": 4,
+          "queries_both_nonzero": 213
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "P@10|MAP@10": {
+          "frac": 0.05421686746987952,
+          "opposite_winner": 9,
+          "queries_both_nonzero": 166
+        },
+        "P@10|MRR@10": {
+          "frac": 0.22340425531914893,
+          "opposite_winner": 21,
+          "queries_both_nonzero": 94
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.07228915662650602,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 166
+        },
+        "P@10|NDCG@10_exp": {
+          "frac": 0.08433734939759036,
+          "opposite_winner": 14,
+          "queries_both_nonzero": 166
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 166
+        },
+        "P@10|R@100": {
+          "frac": 0.25874125874125875,
+          "opposite_winner": 37,
+          "queries_both_nonzero": 143
+        },
+        "R@100|Hit@10": {
+          "frac": 0.1111111111111111,
+          "opposite_winner": 4,
+          "queries_both_nonzero": 36
+        },
+        "R@100|MAP@10": {
+          "frac": 0.31547619047619047,
+          "opposite_winner": 53,
+          "queries_both_nonzero": 168
+        },
+        "R@100|MRR@10": {
+          "frac": 0.3333333333333333,
+          "opposite_winner": 33,
+          "queries_both_nonzero": 99
+        },
+        "R@100|NDCG@10": {
+          "frac": 0.33136094674556216,
+          "opposite_winner": 56,
+          "queries_both_nonzero": 169
+        },
+        "R@100|NDCG@10_exp": {
+          "frac": 0.3431952662721893,
+          "opposite_winner": 58,
+          "queries_both_nonzero": 169
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 38
+        },
+        "R@10|MAP@10": {
+          "frac": 0.05421686746987952,
+          "opposite_winner": 9,
+          "queries_both_nonzero": 166
+        },
+        "R@10|MRR@10": {
+          "frac": 0.22340425531914893,
+          "opposite_winner": 21,
+          "queries_both_nonzero": 94
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.07228915662650602,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 166
+        },
+        "R@10|NDCG@10_exp": {
+          "frac": 0.08433734939759036,
+          "opposite_winner": 14,
+          "queries_both_nonzero": 166
+        },
+        "R@10|R@100": {
+          "frac": 0.25874125874125875,
+          "opposite_winner": 37,
+          "queries_both_nonzero": 143
+        }
+      },
+      "dense_bge_base vs RRF_hybrid": {
+        "Hit@10|MAP@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "Hit@10|MRR@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "Hit@10|NDCG@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "Hit@10|NDCG@10_exp": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "MAP@10|NDCG@10": {
+          "frac": 0.03482587064676617,
+          "opposite_winner": 7,
+          "queries_both_nonzero": 201
+        },
+        "MAP@10|NDCG@10_exp": {
+          "frac": 0.03980099502487562,
+          "opposite_winner": 8,
+          "queries_both_nonzero": 201
+        },
+        "MRR@10|MAP@10": {
+          "frac": 0.11764705882352941,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 102
+        },
+        "MRR@10|NDCG@10": {
+          "frac": 0.11764705882352941,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 102
+        },
+        "MRR@10|NDCG@10_exp": {
+          "frac": 0.11764705882352941,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 102
+        },
+        "NDCG@10|NDCG@10_exp": {
+          "frac": 0.0049504950495049506,
+          "opposite_winner": 1,
+          "queries_both_nonzero": 202
+        },
+        "P@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "P@10|MAP@10": {
+          "frac": 0.0661764705882353,
+          "opposite_winner": 9,
+          "queries_both_nonzero": 136
+        },
+        "P@10|MRR@10": {
+          "frac": 0.296875,
+          "opposite_winner": 19,
+          "queries_both_nonzero": 64
+        },
+        "P@10|NDCG@10": {
+          "frac": 0.08823529411764706,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 136
+        },
+        "P@10|NDCG@10_exp": {
+          "frac": 0.09558823529411764,
+          "opposite_winner": 13,
+          "queries_both_nonzero": 136
+        },
+        "P@10|R@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 136
+        },
+        "P@10|R@100": {
+          "frac": 0.325,
+          "opposite_winner": 26,
+          "queries_both_nonzero": 80
+        },
+        "R@100|Hit@10": {
+          "frac": 0.3333333333333333,
+          "opposite_winner": 4,
+          "queries_both_nonzero": 12
+        },
+        "R@100|MAP@10": {
+          "frac": 0.45045045045045046,
+          "opposite_winner": 50,
+          "queries_both_nonzero": 111
+        },
+        "R@100|MRR@10": {
+          "frac": 0.5185185185185185,
+          "opposite_winner": 28,
+          "queries_both_nonzero": 54
+        },
+        "R@100|NDCG@10": {
+          "frac": 0.45045045045045046,
+          "opposite_winner": 50,
+          "queries_both_nonzero": 111
+        },
+        "R@100|NDCG@10_exp": {
+          "frac": 0.44144144144144143,
+          "opposite_winner": 49,
+          "queries_both_nonzero": 111
+        },
+        "R@10|Hit@10": {
+          "frac": 0.0,
+          "opposite_winner": 0,
+          "queries_both_nonzero": 25
+        },
+        "R@10|MAP@10": {
+          "frac": 0.0661764705882353,
+          "opposite_winner": 9,
+          "queries_both_nonzero": 136
+        },
+        "R@10|MRR@10": {
+          "frac": 0.296875,
+          "opposite_winner": 19,
+          "queries_both_nonzero": 64
+        },
+        "R@10|NDCG@10": {
+          "frac": 0.08823529411764706,
+          "opposite_winner": 12,
+          "queries_both_nonzero": 136
+        },
+        "R@10|NDCG@10_exp": {
+          "frac": 0.09558823529411764,
+          "opposite_winner": 13,
+          "queries_both_nonzero": 136
+        },
+        "R@10|R@100": {
+          "frac": 0.325,
+          "opposite_winner": 26,
+          "queries_both_nonzero": 80
+        }
+      }
+    },
+    "same_P_R_different_rank": {
+      "MAP@10": [
+        1.0,
+        0.29166666666666663
+      ],
+      "MRR@10": [
+        1.0,
+        0.25
+      ],
+      "NDCG@10": [
+        1.0,
+        0.48247555939075504
+      ],
+      "P@10": 0.2,
+      "R@10": [
+        1.0,
+        1.0
+      ],
+      "labels_q1": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "labels_q2": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_relevant": 2,
+      "q1": "PLAIN-1039",
+      "q2": "PLAIN-3085",
+      "system": "BM25"
+    },
+    "sources": {
+      "BM25": "e2_bm25_nfcorpus_selected.json meta={'k1': 2.5, 'b': 0.6, 'analyzer': {'stem': 'porter', 'stop': None, 'pattern': 'w1', 'possessive': False}}",
+      "RRF": "k=60 over the two runs, depth 100",
+      "dense": "e3_bge-base_nfcorpus.json"
+    },
+    "system_level_winners": {
+      "BM25 vs RRF_hybrid": {
+        "Hit@10": {
+          "A": 0.7027863777089783,
+          "B": 0.7368421052631579,
+          "winner": "RRF_hybrid"
+        },
+        "MAP@10": {
+          "A": 0.12288573686064277,
+          "B": 0.13982669398802022,
+          "winner": "RRF_hybrid"
+        },
+        "MAP@100": {
+          "A": 0.14680908046974622,
+          "B": 0.17594409250389845,
+          "winner": "RRF_hybrid"
+        },
+        "MRR": {
+          "A": 0.5345525984036779,
+          "B": 0.5676877474220213,
+          "winner": "RRF_hybrid"
+        },
+        "MRR@10": {
+          "A": 0.5314081773060101,
+          "B": 0.5627819548872179,
+          "winner": "RRF_hybrid"
+        },
+        "NDCG@10": {
+          "A": 0.3271422137940038,
+          "B": 0.3629925809412475,
+          "winner": "RRF_hybrid"
+        },
+        "NDCG@10_exp": {
+          "A": 0.3281702929773995,
+          "B": 0.36385150980541936,
+          "winner": "RRF_hybrid"
+        },
+        "P@10": {
+          "A": 0.23560371517027862,
+          "B": 0.2674922600619195,
+          "winner": "RRF_hybrid"
+        },
+        "R@10": {
+          "A": 0.15663253709788957,
+          "B": 0.17565150742900304,
+          "winner": "RRF_hybrid"
+        },
+        "R@100": {
+          "A": 0.24639701397524186,
+          "B": 0.3286034198352216,
+          "winner": "RRF_hybrid"
+        }
+      },
+      "BM25 vs dense_bge_base": {
+        "Hit@10": {
+          "A": 0.7027863777089783,
+          "B": 0.7461300309597523,
+          "winner": "dense_bge_base"
+        },
+        "MAP@10": {
+          "A": 0.12288573686064277,
+          "B": 0.1453020165187071,
+          "winner": "dense_bge_base"
+        },
+        "MAP@100": {
+          "A": 0.14680908046974622,
+          "B": 0.18412679082077166,
+          "winner": "dense_bge_base"
+        },
+        "MRR": {
+          "A": 0.5345525984036779,
+          "B": 0.5674504887577223,
+          "winner": "dense_bge_base"
+        },
+        "MRR@10": {
+          "A": 0.5314081773060101,
+          "B": 0.5625755565384049,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10": {
+          "A": 0.3271422137940038,
+          "B": 0.3735457659250932,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10_exp": {
+          "A": 0.3281702929773995,
+          "B": 0.3746983779614323,
+          "winner": "dense_bge_base"
+        },
+        "P@10": {
+          "A": 0.23560371517027862,
+          "B": 0.2798761609907121,
+          "winner": "dense_bge_base"
+        },
+        "R@10": {
+          "A": 0.15663253709788957,
+          "B": 0.17838247401129756,
+          "winner": "dense_bge_base"
+        },
+        "R@100": {
+          "A": 0.24639701397524186,
+          "B": 0.3367217011621948,
+          "winner": "dense_bge_base"
+        }
+      },
+      "dense_bge_base vs RRF_hybrid": {
+        "Hit@10": {
+          "A": 0.7461300309597523,
+          "B": 0.7368421052631579,
+          "winner": "dense_bge_base"
+        },
+        "MAP@10": {
+          "A": 0.1453020165187071,
+          "B": 0.13982669398802022,
+          "winner": "dense_bge_base"
+        },
+        "MAP@100": {
+          "A": 0.18412679082077166,
+          "B": 0.17594409250389845,
+          "winner": "dense_bge_base"
+        },
+        "MRR": {
+          "A": 0.5674504887577223,
+          "B": 0.5676877474220213,
+          "winner": "RRF_hybrid"
+        },
+        "MRR@10": {
+          "A": 0.5625755565384049,
+          "B": 0.5627819548872179,
+          "winner": "RRF_hybrid"
+        },
+        "NDCG@10": {
+          "A": 0.3735457659250932,
+          "B": 0.3629925809412475,
+          "winner": "dense_bge_base"
+        },
+        "NDCG@10_exp": {
+          "A": 0.3746983779614323,
+          "B": 0.36385150980541936,
+          "winner": "dense_bge_base"
+        },
+        "P@10": {
+          "A": 0.2798761609907121,
+          "B": 0.2674922600619195,
+          "winner": "dense_bge_base"
+        },
+        "R@10": {
+          "A": 0.17838247401129756,
+          "B": 0.17565150742900304,
+          "winner": "dense_bge_base"
+        },
+        "R@100": {
+          "A": 0.3367217011621948,
+          "B": 0.3286034198352216,
+          "winner": "dense_bge_base"
+        }
+      }
+    },
+    "system_means": {
+      "BM25": {
+        "Hit@10": 0.7027863777089783,
+        "MAP@10": 0.12288573686064277,
+        "MAP@100": 0.14680908046974622,
+        "MRR": 0.5345525984036779,
+        "MRR@10": 0.5314081773060101,
+        "NDCG@10": 0.3271422137940038,
+        "NDCG@10_exp": 0.3281702929773995,
+        "P@10": 0.23560371517027862,
+        "R@10": 0.15663253709788957,
+        "R@100": 0.24639701397524186
+      },
+      "RRF_hybrid": {
+        "Hit@10": 0.7368421052631579,
+        "MAP@10": 0.13982669398802022,
+        "MAP@100": 0.17594409250389845,
+        "MRR": 0.5676877474220213,
+        "MRR@10": 0.5627819548872179,
+        "NDCG@10": 0.3629925809412475,
+        "NDCG@10_exp": 0.36385150980541936,
+        "P@10": 0.2674922600619195,
+        "R@10": 0.17565150742900304,
+        "R@100": 0.3286034198352216
+      },
+      "dense_bge_base": {
+        "Hit@10": 0.7461300309597523,
+        "MAP@10": 0.1453020165187071,
+        "MAP@100": 0.18412679082077166,
+        "MRR": 0.5674504887577223,
+        "MRR@10": 0.5625755565384049,
+        "NDCG@10": 0.3735457659250932,
+        "NDCG@10_exp": 0.3746983779614323,
+        "P@10": 0.2798761609907121,
+        "R@10": 0.17838247401129756,
+        "R@100": 0.3367217011621948
+      }
+    },
+    "system_order_exp": [
+      "dense_bge_base",
+      "RRF_hybrid",
+      "BM25"
+    ],
+    "system_order_linear": [
+      "dense_bge_base",
+      "RRF_hybrid",
+      "BM25"
+    ]
+  },
+  "seed": 42,
+  "timestamp": "20261103T065346"
+}
